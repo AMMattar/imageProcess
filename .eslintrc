@@ -1,0 +1,29 @@
+{
+    "root": true,
+    "plugins": [
+      "prettier",
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "plugin:prettier/recommended",
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": 2 ,
+      "no-use-before-define": ["error", { "functions": true, "classes": true }],
+      "no-var": "error",
+      "prefer-const": "error"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module",
+        "ecmaFeatures": {
+          "jsx": true
+        }
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    }
+}
